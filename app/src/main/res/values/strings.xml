@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Campus Events</string>
+    <string name="title_activity_maps">Campus Events</string>
+    <string name="create_new_activity">Create new Activity</string>
+    <string name="name_of_activity">Name of Activity</string>
+    <string name="type_of_activity">Type of Activity</string>
+    <string name="location">Location</string>
+    <string name="building_and_room">Building and Room</string>
+    <string name="string_building_and_room" />
+    <string name="time">Time</string>
+    <string name="adress">Adress</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="map">map</string>
+</resources>
