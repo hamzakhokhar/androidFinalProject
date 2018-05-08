@@ -48,6 +48,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:text="TextView"
+                    android:textSize="30sp"
                     android:theme="@style/PrimaryTitle"
                     tools:text="New Activity" />
 
@@ -107,7 +108,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/edittext_name"
                     android:text="Health Fitness"
-                    android:textColor="@android:color/darker_gray" />
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/button_view"
@@ -160,7 +162,8 @@
                         android:id="@+id/edittext_address"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
             </RelativeLayout>
