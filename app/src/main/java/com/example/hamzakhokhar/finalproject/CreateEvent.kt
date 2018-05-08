@@ -54,7 +54,7 @@ import kotlinx.android.synthetic.main.create_event.*
         edittext_endtime.onChange{
             event.endtime = it
         }
-        edittext_address.onChange{
+        address_layout.onChange{
             event.address = it
         }
         edittext_state.onChange{

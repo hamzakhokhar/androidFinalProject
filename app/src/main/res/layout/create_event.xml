@@ -115,7 +115,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/edittext_address"
+            android:id="@+id/address_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/end_datetime"
@@ -133,7 +133,7 @@
             android:id="@+id/address_line2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edittext_address"
+            android:layout_below="@+id/address_layout"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal">
 

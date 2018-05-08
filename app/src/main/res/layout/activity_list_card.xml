@@ -34,6 +34,7 @@
                 android:scaleType="fitXY" />
 
             <RelativeLayout
+                android:id="@+id/info"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_alignParentStart="true"
@@ -51,14 +52,53 @@
                     tools:text="New Activity" />
 
                 <TextView
-                    android:id="@+id/edittext_time"
+                    android:id="@+id/edittext_starttime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true"
+                    android:layout_alignEnd="@+id/address_layout"
+                    android:layout_alignTop="@+id/edittext_name"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
                     android:text="12:00p"
                     android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/edittext_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edittext_starttime"
+                    android:layout_alignBottom="@+id/edittext_starttime"
+                    android:layout_toStartOf="@+id/edittext_starttime"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="12/22/2015"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/edittext_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittext_starttime"
+                    android:layout_toEndOf="@+id/edittext_enddate"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="12:00p"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/edittext_enddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/edittext_startdate"
+                    android:layout_below="@+id/edittext_startdate"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="12/22/2015"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/edittext_type"
@@ -69,22 +109,14 @@
                     android:text="Health Fitness"
                     android:textColor="@android:color/darker_gray" />
 
-                <TextView
-                    android:id="@+id/edittext_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@+id/button_view"
-                    android:layout_alignParentStart="true"
-                    android:text="Pilates Class in the student uion" />
-
                 <Button
                     android:id="@+id/button_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentStart="true"
-                    android:theme="@style/PrimaryFlatButton"
-                    android:text="VIEW" />
+                    android:text="VIEW"
+                    android:theme="@style/PrimaryFlatButton" />
 
                 <Button
                     android:id="@+id/button_delete"
@@ -95,7 +127,41 @@
                     android:background="@android:color/transparent"
                     android:text="REMOVE"
                     android:textSize="14sp"
-                    android:theme="@style/PrimaryFlatButton"/>
+                    android:theme="@style/PrimaryFlatButton" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edittext_startdate"
+                    android:layout_alignBottom="@+id/edittext_startdate"
+                    android:layout_toStartOf="@+id/edittext_startdate"
+                    android:text="Start:" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView4"
+                    android:layout_below="@+id/textView4"
+                    android:text="End:" />
+
+                <LinearLayout
+                    android:id="@+id/address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button_view"
+                    android:layout_alignStart="@+id/edittext_type"
+                    android:layout_below="@+id/edittext_type"
+                    android:layout_toEndOf="@+id/button_view"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/edittext_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView" />
+                </LinearLayout>
 
             </RelativeLayout>
         </RelativeLayout>
