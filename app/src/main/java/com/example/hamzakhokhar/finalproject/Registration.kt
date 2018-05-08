@@ -58,6 +58,7 @@ class Registration: AppCompatActivity(){
             }
             else {
                 createUser(name, pwd) }
+
         }
     }
 

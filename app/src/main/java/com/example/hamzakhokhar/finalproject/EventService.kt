@@ -17,6 +17,8 @@ class EventService {
             val key = myRef.push().key
             event.id = key
             myRef.child(key).setValue(event)
+
+
         }
 
         fun get(){

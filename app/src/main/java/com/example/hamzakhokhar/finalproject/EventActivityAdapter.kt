@@ -49,14 +49,6 @@ class EventActivityAdapter(context: Context, eventList: ArrayList<EventActivity>
         vh.editTextStartDate.text = eventsList[position].startdate
         vh.editTextEndDate.text = eventsList[position].enddate
         vh.editTextAddress.text = _address
-
-
-//        vh.location.text = eventsList[position].location
-//        vh.building.text = eventsList[position].building
-//        vh.room.text = eventsList[position].room
-        //vh.adress.text = eventsList[position].adress
-   //     vh.description.text = eventsList[position].description
-
         vh.button_delete.setOnClickListener {
             EventService.delete(eventsList[position])
         }
@@ -86,24 +78,14 @@ class EventActivityAdapter(context: Context, eventList: ArrayList<EventActivity>
 }
 
 private class ListViewHolder(view: View?){
-
-   val editTextName: TextView = view?.findViewById(R.id.edittext_name) as TextView
-   val editTextType: TextView = view?.findViewById(R.id.edittext_type) as TextView
+    val editTextName: TextView = view?.findViewById(R.id.edittext_name) as TextView
+    val editTextType: TextView = view?.findViewById(R.id.edittext_type) as TextView
     val editTextStartDate: TextView = view?.findViewById(R.id.edittext_startdate) as TextView
-   val editTextStartTime: TextView = view?.findViewById(R.id.edittext_starttime) as TextView
-   val editTextEndDate: TextView = view?.findViewById(R.id.edittext_enddate) as TextView
+    val editTextStartTime: TextView = view?.findViewById(R.id.edittext_starttime) as TextView
+    val editTextEndDate: TextView = view?.findViewById(R.id.edittext_enddate) as TextView
     val editTextEndTime: TextView = view?.findViewById(R.id.edittext_endtime) as TextView
     val editTextAddress : TextView = view?.findViewById(R.id.edittext_address) as TextView
-  //  val editTextAddress: TextView = view?.findViewById(R.id.edittext_address) as TextView
-//    val editTextState: TextView = view?.findViewById(R.id.edittext_state) as TextView
-//    val editTextCity: TextView = view?.findViewById(R.id.edittext_city) as TextView
-//    val editTextZip: TextView = view?.findViewById(R.id.edittext_zip) as TextView
-
-
     val mapImageView: ImageView = view?.findViewById(R.id.mapview) as ImageView
-//    val building: TextView = view?.findViewById(R.id.building) as TextView
-//    val room: TextView = view?.findViewById(R.id.room) as TextView
-
     val button_delete: Button = view?.findViewById(R.id.button_delete) as Button
 
 }

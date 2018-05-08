@@ -69,6 +69,8 @@ import kotlinx.android.synthetic.main.create_event.*
 
         button_save.setOnClickListener {
             EventService.save(event);
+            Toast.makeText(this, "Sucessfully Saved", Toast.LENGTH_SHORT).show()
+
         }
 
     }
