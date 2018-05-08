@@ -89,9 +89,21 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Add a marker in Sydney and move the camera
+        // Add a marker in denver and move the camera
         val denver = LatLng(39.742043, -104.991531)
+        val tivoliBuilding  = LatLng(39.745127, -105.005979)
+        val aesBuilding = LatLng(39.744938, -105.008704)
+        val plazaBuilding = LatLng(39.744179, -105.004934)
+        val scienceBuilding = LatLng(39.743892, -105.001471)
+        val adminBuilding = LatLng(39.743892, -105.001471)
         mMap.addMarker(MarkerOptions().position(denver).title("Marker in denver"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(denver))
+        mMap.addMarker(MarkerOptions().position(aesBuilding).title("AES Building"))
+        mMap.addMarker(MarkerOptions().position(tivoliBuilding).title("Tivoli Building"))
+        mMap.addMarker(MarkerOptions().position(plazaBuilding).title("Plaza Building"))
+        mMap.addMarker(MarkerOptions().position(scienceBuilding).title("Science Building"))
+        mMap.addMarker(MarkerOptions().position(adminBuilding).title("Admin Building"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(tivoliBuilding,16.0f))
+
+
     }
 }
